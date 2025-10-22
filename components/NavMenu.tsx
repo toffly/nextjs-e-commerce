@@ -18,7 +18,7 @@ const NavMenu = () => {
               path === link.href && "text-shop_light_green"
             }`}
           >
-            <Link href={link.label}>
+            <Link href={link.href}>
               {link.label}
               <span
                 className={`absolute -bottom-0.5 left-1/2 w-0 h-0.5 bg-shop_light_green group-hover:w-1/2 hoverEffect group-hover:left-0 ${

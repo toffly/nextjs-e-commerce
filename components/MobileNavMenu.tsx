@@ -18,7 +18,7 @@ const MobileNavMenu = () => {
               path === link.href && "text-shop_light_green"
             }`}
           >
-            <Link href={link.label}>{link.label}</Link>
+            <Link href={link.href}>{link.label}</Link>
           </li>
         ))}
       </ul>

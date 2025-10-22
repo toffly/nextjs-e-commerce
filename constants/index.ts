@@ -1,5 +1,3 @@
-import { Youtube } from "lucide-react";
-
 const navLink = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/shop" },
