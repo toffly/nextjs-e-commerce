@@ -6,8 +6,12 @@ import CartIcon from "./CartIcon";
 import SignIn from "./SignIn";
 import MobileMenu from "./MobileMenu";
 import NavMenu from "./NavMenu";
+import { currentUser } from "@clerk/nextjs/server";
+import { ClerkLoaded, SignedIn, UserButton } from "@clerk/nextjs";
 
-const Navbar = () => {
+const Navbar = async () => {
+  const user = await currentUser();
+
   return (
     <header className="bg-white py-5 max-w-full flex items-center justify-between top-0">
       <nav className="container mx-auto flex justify-between px-5 2xl:px-0 text-shop_lightColor">
@@ -27,7 +31,12 @@ const Navbar = () => {
           <SearchBar />
           <CartIcon />
           <FavotiteButton />
-          <SignIn />
+          <ClerkLoaded>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            {!user && <SignIn />}
+          </ClerkLoaded>
         </div>
       </nav>
     </header>
