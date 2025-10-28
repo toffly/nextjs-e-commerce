@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className="font-poppins antialiased">
+        <body className="font-poppins antialiased container">
           <Navbar />
-          {children}
+          <div className="flex-1">{children}</div>
           <Footer />
         </body>
       </html>
