@@ -13,7 +13,7 @@ const Navbar = async () => {
   const user = await currentUser();
 
   return (
-    <header className="bg-white py-5 max-w-full flex items-center justify-between top-0">
+    <header className="bg-white/70 py-5 max-w-full flex items-center justify-between top-0 sticky z-50 backdrop-blur-md">
       <nav className="container mx-auto flex justify-between px-5 2xl:px-0 text-shop_lightColor">
         <div className="w-auto md:w-1/3 flex items-center gap-2.5 justify-start md:gap-0">
           <MobileMenu />
