@@ -10,10 +10,14 @@
   --color-shop_btn_dark_green: #063c29;
   --color-shop_light_bg: #f6f6f6;
   --color-shop_light_green: #3b9c3c;
+  --color-shop_lighter_green: #93d991;
   --color-shop_orange: #fb6c08;
   --color-shop_darkColor: #151515;
   --color-shop_lightColor: #52525b;
   --color-shop_lightOrange: #fca99b;
+  --color-shop_lighter_bg: #f1f3f8;
+  --color-shop_lighter_text: #686e7d;
+  --color-shop_lightText: #ababab;
 }
 
 @theme inline {
