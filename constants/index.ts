@@ -2,7 +2,7 @@ const navLink = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/shop" },
   { label: "Blog", href: "/blog" },
-  { label: "HotDeal", href: "/hotdeal" },
+  { label: "HotDeal", href: "/deal" },
 ];
 
 export { navLink };
