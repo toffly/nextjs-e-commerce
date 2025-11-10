@@ -5,7 +5,7 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className="font-poppins antialiased container">{children}</body>
+      <body className="font-poppins antialiased">{children}</body>
     </html>
   );
 };
