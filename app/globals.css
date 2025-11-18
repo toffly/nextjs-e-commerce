@@ -159,3 +159,7 @@
 @utility subtext {
   @apply text-gray-600 text-sm;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none
+}
