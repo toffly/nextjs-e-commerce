@@ -3,6 +3,7 @@ import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Shopcard Online Store",
@@ -21,6 +22,12 @@ export default function RootLayout({
         <div className="flex-1">{children}</div>
         <Footer />
       </div>
+      <Toaster position="bottom-right" toastOptions={{
+        style: {
+          background: "#000000",
+          color: "#fff"
+        }
+      }}/>
     </ClerkProvider>
   );
 }

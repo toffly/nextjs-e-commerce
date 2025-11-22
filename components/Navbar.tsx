@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import SearchBar from "./SearchBar";
-import FavotiteButton from "./FavotiteButton";
+import FavoriteButton from "./FavoriteButton";
 import CartIcon from "./CartIcon";
 import SignIn from "./SignIn";
 import MobileMenu from "./MobileMenu";
@@ -30,7 +30,7 @@ const Navbar = async () => {
         <div className="w-auto md:w-1/3 flex items-center justify-end gap-5">
           <SearchBar />
           <CartIcon />
-          <FavotiteButton />
+          <FavoriteButton />
           <ClerkLoaded>
             <SignedIn>
               <UserButton />
