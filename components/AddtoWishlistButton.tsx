@@ -6,6 +6,7 @@ import useStore from "@/store";
 import { Heart } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { Button } from "./ui/button";
 
 const AddtoWishlistButton = ({
   product,
@@ -35,12 +36,14 @@ const AddtoWishlistButton = ({
 
   return (
     <div className={cn("absolute top-2 right-2 z-10", className)}>
-      <button
+      <Button
         onClick={handleFavorite}
-        className={`p-2.5 rounded-full hover:bg-shop_dark_green hover:text-white hoverEffect ${existingProduct ? "bg-shop_dark_green text-white" : "bg-shop_lightColor/10"}`}
+        variant="outline"
+        className={`p-2.5 rounded-full w-full hover:bg-shop_dark_green hover:text-white hoverEffect ${existingProduct ? "bg-shop_dark_green text-white" : "bg-shop_lightColor/10"}`}
+        asChild
       >
         <Heart size={15} />
-      </button>
+      </Button>
     </div>
   );
 };
