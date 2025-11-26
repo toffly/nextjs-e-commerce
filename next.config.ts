@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  experimental: { turbopackScopeHoisting: false}
 };
 
 export default nextConfig;
