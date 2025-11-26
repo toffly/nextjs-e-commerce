@@ -70,6 +70,10 @@ const Cart = () => {
     }
   };
 
+  const handleCheckout= () => {
+    
+  }
+
   useEffect(() => {
     fetchAddress();
   }, []);
@@ -209,6 +213,7 @@ const Cart = () => {
                           className="w-full rounded-full font-semibold tracking-wide hoverEffect"
                           size="lg"
                           disabled={loading}
+                          onClick={handleCheckout()}
                         >
                           {loading ? "Please wait..." : "Proceed to Checkout"}
                         </Button>
@@ -285,6 +290,7 @@ const Cart = () => {
                         className="w-full rounded-full font-semibold tracking-wide hoverEffect"
                         size="lg"
                         disabled={loading}
+                        onClick={handleCheckout()}
                       >
                         {loading ? "Please wait..." : "Proceed to Checkout"}
                       </Button>
